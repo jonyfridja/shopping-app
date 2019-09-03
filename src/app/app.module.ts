@@ -5,6 +5,12 @@ import { AppComponent } from './app.component';
 import { RecipePageComponent } from './pages/recipe-page/recipe-page.component';
 import { IngredientPageComponent } from './pages/ingredient-page/ingredient-page.component';
 import { AppNavComponent } from './components/app-nav/app-nav.component';
+import { IngredientFormComponent } from './components/ingredient-form/ingredient-form.component';
+import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
+import { IngredientListComponent } from './components/ingredient-list/ingredient-list.component';
+import { IngredientPreviewComponent } from './components/ingredient-preview/ingredient-preview.component';
+import { RecipePreviewComponent } from './components/recipe-preview/recipe-preview.component';
 
 const routes = [
   {path:'', component: RecipePageComponent},
@@ -16,7 +22,13 @@ const routes = [
     AppComponent,
     RecipePageComponent,
     IngredientPageComponent,
-    AppNavComponent
+    AppNavComponent,
+    IngredientFormComponent,
+    RecipeListComponent,
+    RecipeDetailsComponent,
+    IngredientListComponent,
+    IngredientPreviewComponent,
+    RecipePreviewComponent
   ],
   imports: [
     BrowserModule,
