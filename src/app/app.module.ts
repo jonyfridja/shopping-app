@@ -11,9 +11,13 @@ import { RecipeDetailsComponent } from './components/recipe-details/recipe-detai
 import { IngredientListComponent } from './components/ingredient-list/ingredient-list.component';
 import { IngredientPreviewComponent } from './components/ingredient-preview/ingredient-preview.component';
 import { RecipePreviewComponent } from './components/recipe-preview/recipe-preview.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 const routes = [
   {path:'', component: RecipePageComponent},
+  {path:'recipe', redirectTo: ''},
+  {path:'ingredient', component: IngredientPageComponent},
   
 ];
 
@@ -32,7 +36,8 @@ const routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

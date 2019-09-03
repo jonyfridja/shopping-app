@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+
+
+// Helpers
+
+.max-width {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #ccc;
+}
+.margin-top {
+    margin-top: 20px;
+}
