@@ -1,21 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    margin: 0;
+    font-family: roboto-regular, sans-serif;
+  margin: 0;
 }
 
-
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 // Helpers
 
 .max-width {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right:auto;
-    background-color: #ccc;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .margin-top {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
 }
